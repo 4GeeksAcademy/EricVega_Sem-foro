@@ -10,3 +10,59 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+/* General styles */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Traffic Light styles */
+  .traffic-light {
+    background-color: black;
+    width: 100px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .light {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .light.red {
+    background-color: red;
+  }
+  
+  .light.yellow {
+    background-color: yellow;
+  }
+  
+  .light.green {
+    background-color: green;
+  }
+  
+  .light.active {
+    box-shadow: 0 0 30px 10px white;
+  }
+  
+  /* Pole styles */
+  .pole {
+    width: 20px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: -120px;
+  }
+  
